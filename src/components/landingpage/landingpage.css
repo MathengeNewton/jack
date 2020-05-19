@@ -1,0 +1,44 @@
+.page{
+    display: inline-flex;
+    width: 100%;
+    background-color: aqua;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*logo item*/
+.logo{
+    width:100%;
+    height: 20%;
+}
+
+.largelogo{
+    width: 10%;
+    margin:2%;
+}
+
+.headersmall{
+    width: 80%;
+    padding-left:5%;
+    margin-right:25%;
+    
+    color: black;
+    font-weight: bolder;
+}
+/*navigation dropdown menu */
+.navlist{
+    height: 100%;
+    margin-right: 5%;
+    display:inline-block;
+}
+.navitems{
+    display: none;
+}
+.navicon{    
+    padding-top: 75%;
+    padding-right: 15%;
+}
+/* #navitems{
+    display: 'block';    
+} */
