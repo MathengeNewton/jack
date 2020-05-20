@@ -1,0 +1,29 @@
+.body{
+    background-image: url("./logo.jpg");    
+    opacity: .5;
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.homeTitle{
+    padding:5%;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: cursive;
+    color: rgb(10, 10, 10);
+    font-size: 2rem;
+    line-height: 0.9;
+    text-align: center;
+}
+.contact-box{
+    width: 20%;
+    border: 2px solid rgb(22, 13, 13);
+    background-color: rgb(22, 13, 13);
+    border-radius: 5px;
+    margin-left: 30%;
+    padding: 3%;
+    color: whitesmoke;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}

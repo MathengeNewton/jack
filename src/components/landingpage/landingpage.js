@@ -1,8 +1,9 @@
 import React,{Fragment, useState} from 'react'
 import Media from 'react-media'
 import './landingpage.css'
-import MenuIcon from '@material-ui/icons/Menu';
-import CloseIcon from '@material-ui/icons/Close';
+import Body from '../body/body'
+import MenuIcon from '@material-ui/icons/Menu'
+import CloseIcon from '@material-ui/icons/Close'
 
 let Landingpage = ()=> {
 let [navclass, setNavclass]= useState("navitems");
@@ -27,7 +28,7 @@ let hidenav = ()=>{
     setNhide(nhide="none")
 }
     return(
-        <div>
+        <div className="homepage">
         <Media 
         queries={{
             small: "(max-width: 550px)",
@@ -37,6 +38,7 @@ let hidenav = ()=>{
             {matches=> (
                 <Fragment>
                 {matches.small &&
+                <>
                 <div className="page">
                     <header className="headersmall">
                         <h4>jack_dreds _54</h4>
@@ -47,12 +49,16 @@ let hidenav = ()=>{
                             <CloseIcon onClick={hidenav} color="black" style={navhide} />
                         </div>
                         <navlist id="navitems" className={navclass}>
-                           <div><a href=".">Home</a></div>
+                           <div><a href=".">Home   </a></div>
                            <div><a href=".">gallery</a></div>
                            <div><a href=".">contacts</a></div>
                         </navlist>
                     </dropdown>
                 </div>
+                <body>
+                    <Body />
+                </body>
+                </>
                 }
                 {matches.medium &&
                 <div className="page">

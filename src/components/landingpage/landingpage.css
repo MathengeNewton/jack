@@ -1,7 +1,7 @@
 .page{
     display: inline-flex;
     width: 100%;
-    background-color: aqua;
+    background-color: whitesmoke;
 }
 a{
     text-decoration: none;
@@ -39,6 +39,14 @@ a{
     padding-top: 75%;
     padding-right: 15%;
 }
-/* #navitems{
-    display: 'block';    
-} */
+#navitems{
+    display: 'block';
+    width: 20%;
+    height: 25%;  
+}
+#navitems div a{
+    width:100%;
+    height: 30%;
+    margin-top: 20%;
+    
+}
