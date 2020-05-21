@@ -2,6 +2,7 @@ import React,{Fragment, useState} from 'react'
 import Media from 'react-media'
 import './landingpage.css'
 import Body from '../body/body'
+import Footer from '../footer/footer'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 
@@ -31,9 +32,9 @@ let hidenav = ()=>{
         <div className="homepage">
         <Media 
         queries={{
-            small: "(max-width: 550px)",
-            medium:"(min-width: 551px) (max-width:999px)",
-            large:"(min-width: 1000px)"
+            small: "(max-width: 720px)",
+            // medium:"(min-width: 551px) (max-width:999px)",
+            large:"(min-width: 721px)"
         }}>
             {matches=> (
                 <Fragment>
@@ -60,33 +61,31 @@ let hidenav = ()=>{
                 </body>
                 </>
                 }
-                {matches.medium &&
-                <div className="page">
-                    <header className="headermedium">
-                        <h4>jack_dreds_254</h4>
-                    </header>                    
-                </div>
-                }
                 {matches.large &&
+                <>
                 <div className="page">
-                    <logo>
+                    <logo className="llogo">
                         <div className="logo">
                             <img className="largelogo" src="logo.jpg" alt=""/>
                         </div>
                     </logo>
-                    <header className="headerlarge">
-                        <h3>Jack Dreds</h3>
-                    </header>
-                    <navlist className="navitems">
+                    <navlist className="navigations">
                         <a href=".">Home</a>
                         <a href=".">gallery</a>
                         <a href=".">contacts</a>
                     </navlist>
-                </div>    
+                </div> 
+                <body className="body">
+                    <Body />
+                </body>
+                </>   
                 }
             </Fragment>
             )}
           </Media>
+          <div className="footer">
+                <Footer />
+          </div>
       </div>
     )
 }

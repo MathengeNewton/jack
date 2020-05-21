@@ -1,0 +1,19 @@
+.each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+  }
+  
+  .each-fade {
+    display: flex;
+  }
+  
+  .each-fade .image-container {
+    width: 100%;
+  }
+  
+  .each-fade .image-container img {
+    width: 100%;
+  }
+  

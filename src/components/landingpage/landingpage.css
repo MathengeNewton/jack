@@ -50,3 +50,29 @@ a{
     margin-top: 20%;
     
 }
+.llogo{
+    width: 50%;
+    height: 90%;
+}
+.navigations{
+    width: 45%;
+    margin-left:5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+.navigations a{
+    margin:5%;
+    text-transform: uppercase;
+    border: 2px solid rgb(105, 55, 25,.6);
+    color: whitesmoke;
+    background-color: rgba(87, 34, 2, 0.6);
+    border-radius: 5px; 
+    padding: 3%;   
+}
+.navigations a:hover{
+    background-color: brown;
+    color: rgb(151, 151, 184);
+}
+.body{
+    width: 100%;
+}

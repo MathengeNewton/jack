@@ -1,0 +1,20 @@
+.footer{
+    background-color: rgba(0, 0, 0, 0.61);
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    height: 20%;
+    width: 100%;
+}
+ .copyright{
+     width: 27%;
+     margin-top: 5%;
+     margin-left: 5%;
+     margin-right: 7%;
+     margin-bottom: 5%;
+ }
+ .links{
+    width: 27%;
+    margin: 5%;
+    margin-left: 10%;;
+ }
