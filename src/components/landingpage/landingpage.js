@@ -15,7 +15,7 @@ let navview = {
     display:nstyle
 }
 let navhide = {
-    paddingBottom:'20%',
+    paddingBottom:'30%',
     display:nhide
 }
 let viewnav =()=>{

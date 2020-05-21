@@ -1,5 +1,5 @@
 .footer{
-    background-color: rgba(0, 0, 0, 0.61);
+    background-color: rgba(79, 76, 90, 0.966);
     color: whitesmoke;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
@@ -16,5 +16,8 @@
  .links{
     width: 27%;
     margin: 5%;
-    margin-left: 10%;;
+    margin-left: 10%;
+ }
+ .links a{
+    margin-right: 20%;
  }
