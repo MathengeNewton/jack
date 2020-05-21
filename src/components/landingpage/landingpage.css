@@ -1,4 +1,7 @@
-.page{
+.homepage{
+    width:100%;
+}
+.navbar{
     display: inline-flex;
     width: 100%;
     background-color: whitesmoke;
@@ -8,15 +11,7 @@ a{
     color: black;
 }
 /*logo item*/
-.logo{
-    width:100%;
-    height: 20%;
-}
 
-.largelogo{
-    width: 10%;
-    margin:2%;
-}
 
 .headersmall{
     width: 80%;
@@ -52,27 +47,25 @@ a{
     font-weight: bolder;
 }
 .llogo{
-    width: 50%;
+    width: 40%;
+    font-weight: bolder;
+    font-size: large;
+    margin:2%;
+    margin-left: 10%;
     height: 90%;
 }
 .navigations{
     width: 45%;
-    margin-left:5%;
     margin-right: 5%;
     margin-top: 2%;
 }
 .navigations a{
     margin:5%;
     text-transform: uppercase;
-    border: 2px solid rgb(105, 55, 25,.6);
-    color: whitesmoke;
-    background-color: rgba(87, 34, 2, 0.6);
-    border-radius: 5px; 
-    padding: 3%;   
+    font-weight: 600;   
 }
-.navigations a:hover{
-    background-color: brown;
-    color: rgb(151, 151, 184);
+.navigations a:hover{   
+    font-weight: bolder;
 }
 .body{
     width: 100%;

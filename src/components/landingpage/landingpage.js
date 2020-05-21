@@ -40,7 +40,7 @@ let hidenav = ()=>{
                 <Fragment>
                 {matches.small &&
                 <>
-                <div className="page">
+                <div className="navbar">
                     <header className="headersmall">
                         <h4>jack_dreds _54</h4>
                     </header>
@@ -63,15 +63,15 @@ let hidenav = ()=>{
                 }
                 {matches.large &&
                 <>
-                <div className="page">
+                <div className="navbar">
                     <logo className="llogo">
                         <div className="logo">
-                            <img className="largelogo" src="logo.jpg" alt=""/>
+                            JACK_DREDS_254
                         </div>
                     </logo>
                     <navlist className="navigations">
-                        <a href=".">Home</a>
                         <a href=".">gallery</a>
+                        <a href=".">Bookings</a>
                         <a href=".">contacts</a>
                     </navlist>
                 </div> 
