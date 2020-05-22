@@ -57,7 +57,7 @@ let LargeGrid=()=> {
       <GridList cellHeight={350} spacing={3} className={classes.gridList}>
         {tileData.map((tile) => (
           <GridListTile key={tile.img} cols={tile.featured ? 3 : 2} rows={tile.featured ? 3 : 2}>
-            <img src={tile.img} alt={tile.title} />
+            <img src={tile.img} alt={tile.title} loading="lazy"/>
             <GridListTileBar
               title={tile.title}
               titlePosition="top"

@@ -44,7 +44,7 @@ let ImageGrid=()=> {
       <GridList cellHeight={300} className={classes.gridList} cols={3}>
         {tileData.map((tile) => (
           <GridListTile key={tile.img} cols={tile.cols || 3}>
-            <img src={tile.img} alt={tile.title} />
+            <img src={tile.img} alt={tile.title} loading="lazy"/>
           </GridListTile>
         ))}
       </GridList>
