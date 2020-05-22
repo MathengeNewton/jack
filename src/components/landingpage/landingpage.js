@@ -44,25 +44,25 @@ let Landingpage = ()=> {
                 {matches.large &&
                 <>
                 <div className="navbar">
-                    <logo className="llogo">
+                    <div className="llogo">
                     <a href="/">  <div className="logo">
                             JACK_DREDS_254
                         </div>
                     </a>
-                    </logo>
-                    <navlist className="navigations">
+                    </div>
+                    <div className="navigations">
                         <a href="/gallery">gallery</a>
                         <a href="/booking">Bookings</a>
                         <a href="/contacts">contacts</a>
-                    </navlist>
+                    </div>
                 </div> 
-                <body className="body">
+                <div className="body">
                 <Switch>
                     <Route path="/" exact component={Body} />
                     <Route path="/gallery" exact component={Gallery}/>
                 </Switch>                        
                     
-                </body>
+                </div>
                 </>   
                 }
             </Fragment>
