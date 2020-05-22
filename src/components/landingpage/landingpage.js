@@ -1,35 +1,18 @@
-import React,{Fragment, useState} from 'react'
+import React,{Fragment} from 'react'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Media from 'react-media'
 import './landingpage.css'
 import Body from '../body/body'
+import Gallery from '../gallery/gallery'
 import Footer from '../footer/footer'
-import MenuIcon from '@material-ui/icons/Menu'
-import CloseIcon from '@material-ui/icons/Close'
 
 let Landingpage = ()=> {
-let [navclass, setNavclass]= useState("navitems");
-let[nstyle,setNstyle] = useState("");
-let [nhide,setNhide] = useState("none")
 
-let navview = {
-    display:nstyle
-}
-let navhide = {
-    paddingBottom:'30%',
-    display:nhide
-}
-let viewnav =()=>{
-    setNavclass(navclass = "")
-    setNstyle(nstyle = "none")
-    setNhide(nhide="")
-}
-let hidenav = ()=>{
-    setNavclass(navclass = "navitems")
-    setNstyle(nstyle = "")
-    setNhide(nhide="none")
-}
+
+
     return(
         <div className="homepage">
+        <Router>
         <Media 
         queries={{
             small: "(max-width: 720px)",
@@ -37,27 +20,24 @@ let hidenav = ()=>{
             large:"(min-width: 721px)"
         }}>
             {matches=> (
-                <Fragment>
+            <Fragment>
                 {matches.small &&
                 <>
                 <div className="navbar">
                     <header className="headersmall">
-                        <h4>jack_dreds _54</h4>
+                        <a href="/"><h4>jack_dreds _54</h4></a>
                     </header>
-                    <dropdown className="navlist">
-                        <div className="navicon" >
-                            <MenuIcon onClick={viewnav} color="black" style={navview}/>
-                            <CloseIcon onClick={hidenav} color="black" style={navhide} />
-                        </div>
-                        <navlist id="navitems" className={navclass}>
-                           <div><a href=".">Home   </a></div>
-                           <div><a href=".">gallery</a></div>
-                           <div><a href=".">contacts</a></div>
-                        </navlist>
+                    <dropdown className="smallnavlist">                        
+                          <div><a href="/gallery">gallery</a></div>
+                          <div><a href="/bookings">Bookings</a></div>
+                         <div><a href="/contacts">contacts</a></div>                        
                     </dropdown>
                 </div>
-                <body>
-                    <Body />
+                <body>                  
+                        <Switch>
+                            <Route path="/" exact component={Body} />                                
+                            <Route path="/gallery" exact component={Gallery} />                           
+                        </Switch>
                 </body>
                 </>
                 }
@@ -65,18 +45,23 @@ let hidenav = ()=>{
                 <>
                 <div className="navbar">
                     <logo className="llogo">
-                        <div className="logo">
+                    <a href="/">  <div className="logo">
                             JACK_DREDS_254
                         </div>
+                    </a>
                     </logo>
                     <navlist className="navigations">
-                        <a href=".">gallery</a>
-                        <a href=".">Bookings</a>
-                        <a href=".">contacts</a>
+                        <a href="/gallery">gallery</a>
+                        <a href="/booking">Bookings</a>
+                        <a href="/contacts">contacts</a>
                     </navlist>
                 </div> 
                 <body className="body">
-                    <Body />
+                <Switch>
+                    <Route path="/" exact component={Body} />
+                    <Route path="/gallery" exact component={Gallery}/>
+                </Switch>                        
+                    
                 </body>
                 </>   
                 }
@@ -86,8 +71,10 @@ let hidenav = ()=>{
           <div className="footer">
                 <Footer />
           </div>
-      </div>
+          </Router>
+          </div>
     )
 }
+
 
 export default Landingpage
