@@ -29,9 +29,18 @@ let Body = () =>{
                 </div>
             }
             {matches.large &&
-            <div>
-                <h2>some content here</h2>
-            </div>
+            <div className="largeTitle">
+                <div className="limageoverlay">                    
+                    <img src="./bg-corousel/bg.jpg" className="img" alt=".."/>
+                </div>
+                <div className="largeoverlaycontent">
+                    <h3>Based Next to Nyayo highrise estate along Mbagathi road</h3>
+                    <h4>For bookings call/Whatsapp</h4>
+                    <div className="contact-box">
+                        0717176062
+                    </div>
+                </div>
+         </div>
             }
                 </Fragment>
              )}

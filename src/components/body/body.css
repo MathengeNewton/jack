@@ -30,10 +30,34 @@
     height: 100%;
     opacity: .9;
 }
+.limageoverlay{   
+    width: 100%;
+    opacity: .9;
+}
 .overlaycontent{
     width: 90%;
     margin-left: 5%;    
     position:absolute;
     top:25%;
     bottom: 50%;
+}
+.largeoverlaycontent{
+    width: 90%;
+    margin-left: 5%;    
+    position:absolute;
+    top:20%;
+}
+.largeTitle{
+    text-transform: uppercase;
+    background-color: rgb(27, 26, 26);
+    font-style: italic;
+    font-family: cursive;
+    color: rgb(250, 195, 12);
+    font-size: 2rem;
+    line-height: 0.9;
+    text-align: center;
+    position: relative;
+}
+.img{
+    width: 100%;
 }

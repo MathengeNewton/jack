@@ -33,7 +33,7 @@ let Landingpage = ()=> {
                          <div><a href="/contacts">contacts</a></div>                        
                     </dropdown>
                 </div>
-                <body>                  
+                <body className="body">                  
                         <Switch>
                             <Route path="/" exact component={Body} />                                
                             <Route path="/gallery" exact component={Gallery} />                           
@@ -43,12 +43,13 @@ let Landingpage = ()=> {
                 }
                 {matches.large &&
                 <>
-                <div className="navbar">
+                <div className="lnavbar">
                     <div className="llogo">
-                    <a href="/">  <div className="logo">
+                        <a href="/"> 
+                        <div className="largelogo">
                             JACK_DREDS_254
                         </div>
-                    </a>
+                        </a>
                     </div>
                     <div className="navigations">
                         <a href="/gallery">gallery</a>
@@ -60,8 +61,7 @@ let Landingpage = ()=> {
                 <Switch>
                     <Route path="/" exact component={Body} />
                     <Route path="/gallery" exact component={Gallery}/>
-                </Switch>                        
-                    
+                </Switch>                  
                 </div>
                 </>   
                 }
