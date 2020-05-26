@@ -18,6 +18,7 @@ let Gallery =()=>{
                 <div className="gallerySmall">
                     <ImageGrid />
                 </div>
+            
                 }
                 {matches.large &&
                 <div className="galleryLarge">
