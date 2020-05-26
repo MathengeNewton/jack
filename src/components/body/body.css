@@ -43,11 +43,13 @@
 }
 .largeoverlaycontent{
     width: 90%;
+    height: 100%;
     margin-left: 5%;    
     position:absolute;
     top:20%;
 }
 .largeTitle{
+    height: 90%;
     text-transform: uppercase;
     background-color: rgb(27, 26, 26);
     font-style: italic;

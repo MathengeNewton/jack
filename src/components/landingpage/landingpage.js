@@ -4,6 +4,7 @@ import Media from 'react-media'
 import './landingpage.css'
 import Body from '../body/body'
 import Gallery from '../gallery/gallery'
+import Contacts from '../contacts/contacts'
 import Footer from '../footer/footer'
 
 let Landingpage = ()=> {
@@ -36,7 +37,8 @@ let Landingpage = ()=> {
                 <body className="body">                  
                         <Switch>
                             <Route path="/" exact component={Body} />                                
-                            <Route path="/gallery" exact component={Gallery} />                           
+                            <Route path="/gallery" exact component={Gallery} /> 
+                            <Route path="/contacts" exact component={Contacts} />                          
                         </Switch>
                 </body>
                 </>
@@ -61,6 +63,7 @@ let Landingpage = ()=> {
                 <Switch>
                     <Route path="/" exact component={Body} />
                     <Route path="/gallery" exact component={Gallery}/>
+                    <Route path="/contacts" exact component={Contacts} />
                 </Switch>                  
                 </div>
                 </>   

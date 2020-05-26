@@ -20,7 +20,8 @@ let Body = () =>{
                         <Slideshow />
                     </div>
                     <div className="overlaycontent">
-                        <h3>Based Next to Nyayo highrise estate along Mbagathi road</h3>
+                        <h3>Based Next to Nyayo highrise </h3>
+                        <h3>estate along Mbagathi road</h3>
                         <h4>For bookings call/Whatsapp</h4>
                         <div className="contact-box">
                                 0717176062
@@ -34,7 +35,8 @@ let Body = () =>{
                     <img src="./bg-corousel/bg.jpg" className="img" alt=".."/>
                 </div>
                 <div className="largeoverlaycontent">
-                    <h3>Based Next to Nyayo highrise estate along Mbagathi road</h3>
+                    <h3>Based Next to Nyayo highrise </h3>
+                    <h3>estate along Mbagathi road</h3>
                     <h4>For bookings call/Whatsapp</h4>
                     <div className="contact-box">
                         0717176062

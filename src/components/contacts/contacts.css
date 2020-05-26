@@ -1,0 +1,95 @@
+.contacts{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.bgimage{
+    width: 100%;
+    height: 100%;
+    size: cover;
+    overflow: hidden;
+    opacity: .1;
+}
+.contactCard{
+    position: absolute;
+    top: 30%;
+    margin-left: 5%;
+    color: aliceblue;
+}
+.messanger{
+    position: absolute;
+    top: 30%;
+    margin-left: 50%;
+    border: 1px solid black;
+    background-color: white;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+.messanger header{
+    margin-top: 7%;
+    color: rgb(15, 90, 15);
+    font-size: medium;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.return input[type="text"]{
+    margin-left: 1%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    width: 87%;
+    padding: 5%;
+}
+.return textarea{
+    margin-bottom: 5%;
+}
+.return input[type="submit"]{
+    border: 1px solid rgb(110, 145, 143);
+    padding: 2%;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.scontact{
+    background-image: url("/public/bg-corousel/bg.jpg");
+    width: 100%;
+    height: 700px;
+    display: inline-block; 
+}
+.card{
+    padding-top: 5%;
+    padding-left: 5%;
+    color: aliceblue;
+    width: 90%;
+    margin-left: 5%;
+}
+.msg{
+    margin-left: 5%;
+    width: 80%;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;  
+    text-align: center; 
+}
+.msg header{
+    color: rgb(15, 90, 15);
+    font-size: medium;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.sreturn input[type="text"]{
+    width: 76%;
+    margin: 5%;
+    padding: 5%;
+}
+.sreturn input[type="submit"]{
+    border: 1px solid rgb(110, 145, 143);
+    padding: 2%;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
