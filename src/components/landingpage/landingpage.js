@@ -30,7 +30,6 @@ let Landingpage = ()=> {
                     </header>
                     <dropdown className="smallnavlist">                        
                           <div><a href="/gallery">gallery</a></div>
-                          <div><a href="/bookings">Bookings</a></div>
                          <div><a href="/contacts">contacts</a></div>                        
                     </dropdown>
                 </div>
@@ -55,7 +54,6 @@ let Landingpage = ()=> {
                     </div>
                     <div className="navigations">
                         <a href="/gallery">gallery</a>
-                        <a href="/booking">Bookings</a>
                         <a href="/contacts">contacts</a>
                     </div>
                 </div> 
